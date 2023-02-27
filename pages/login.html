@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rambo - Register</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+<body>
+    <!-- Inicio menu de Navegacion -->
+    <nav class="nav">
+        <input class="nav__checkbox" id="nav__checkbox" type="checkbox" />
+        <label class="nav__toggle" for="nav__checkbox">
+          <img class="hamburger" src="../img/icons8-menu-30.png" />
+          <img class="close" src="../img/icons8-menu-30.png" />
+        </label>
+  
+        <ul class="nav__menu">
+          <li>
+            <a href="../index.html">
+              <h1 class="logo-home">Rambo</h1>
+            </a>
+          </li>
+          <li><a href="../">Inicio</a></li>
+          <li><a href="../index.html#titulo-secundario">Sylvester Stallone</a></li>
+          <li><a href="../index.html#peliculas">Peliculas</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+
+      <header>
+        <img class="logo" src="../img/rambo.svg" alt="Logo Rambo" />
+      </header>
+
+      <h2 class="titulo-form">Inicia sesion aca!</h2>
+      <form id="forma" name="forma" method="POST">
+		<div class="contenedor">
+			<h2>ingresa tus datos!</h2>
+			<div class="elemento">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="email@email.com"><br><br>
+			</div>
+
+            <div class="elemento">
+				<label for="contrasenia">Ingresa tu contraseña:</label>
+				<input type="password" id="contrasenia" name="email"><br><br>
+			</div>
+
+            <a href="#">Olvidaste tu mail o contraseña?</a>
+
+			<div class="elemento">
+				<input type="submit" value="Enviar formulario"/>
+			</div>
+			<div class="elemento">
+				<input type="reset" value="Limpiar formulario"/>
+			</div>
+		</div>
+
+        <!-- Inicio Footer -->
+    <footer>
+        <div>
+            <h3 class="logo-footer">Rambo</h3>
+            
+        </div>
+        <div>
+            <h3>Como contactarme:</h3>
+            <h4>Email: gerardo.gambarte17@gmail.com</h4>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,352 @@
+*{
+    scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "verdana", sans-serif;
+  background-color: black;
+}
+.nav {
+  background-color: black;
+  height: 150px;
+}
+.nav__toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0rem 1rem;
+  right: 0;
+}
+
+.close,
+input[type="checkbox"] {
+  display: none;
+  margin-top: 2.5rem;
+}
+.hamburger {
+  color: white;
+  margin-top: 2.5rem;
+}
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+}
+li {
+  list-style: none;
+  display: none;
+}
+li:first-child {
+  margin-right: auto;
+  display: block;
+}
+.nav__menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+/* Selector hermano */
+#nav__checkbox:checked ~ ul.nav__menu li {
+  z-index: 1;
+  display: block;
+}
+/* Selector hermano */
+#nav__checkbox:checked ~ label.nav__toggle .hamburger {
+  display: none;
+}
+/* Selector hermano */
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block; 
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+h2{
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    text-align: center;
+}
+h3{
+    padding-top: 25px;
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    text-align: center;
+}
+/* medidas de img para vista pc */
+.first{
+  width: 800px;
+  height: 650px;
+}
+.second{
+  width: 950px;
+  height: 750px;
+}
+.third{
+  width: 1050px;
+  height: 550px;
+}
+.sly{
+    width: 800px;
+}
+.texto-centrado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    color: white;
+    width: 80%;
+    text-align: center;
+}
+.logo{
+    width: 800px;
+    height: 800px;
+}
+.logo-home{
+    color: red;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+}
+/* grilla imagenes */
+.container {
+    display: grid;
+    padding: 1rem;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(3, 450px);
+    grid-template-rows: 450px 450px;
+    justify-content: center;
+  }
+.hijo {
+    padding: 1rem;
+  }
+.logo-footer{
+    color: red;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    text-align: center;
+    padding-top: 75px;
+}
+.linkedin{
+  margin-left: 130px;
+  font-weight: 800;
+}
+a{
+    font-family: 'Bebas Neue';
+    padding-top: 2rem;
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+
+}
+/* estilos formulario de contacto */
+.contenedor {
+  margin: 50px auto;
+  width: 500px;
+  padding: 50px;
+  background: #000000;
+  border-radius: 35px;
+  border: 5px solid #d0d0d0;
+  z-index: 0;
+}
+
+.contenedor h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 30px;
+  color: red;
+  text-align: center; }
+
+.contenedor .elemento label {
+  color: white; }
+
+.contenedor .elemento input {
+  width: 95%;
+  padding: 10px 0;
+  color: black;
+  background: #e6ffff;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px; }
+
+.contenedor .elemento input[type="submit"] {
+  background-color: #e6ffff;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 15px;
+  margin-top: 30px; }
+
+.contenedor .elemento input[type="reset"] {
+  background-color: #e6ffff;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 15px;
+  margin-top: 30px; }
+
+/* Media querie medida 768px */
+@media only screen and (min-width: 768px) {
+  .nav__toggle {
+    display: none;
+  }
+  .nav__menu {
+    flex-direction: row;
+  }
+  .nav__menu li {
+    display: block;
+  }
+.texto-centrado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+display: grid;
+padding-bottom: 100px;
+padding-right: 100px;
+grid-gap: 150px 10px;
+grid-template-columns: repeat(3, 400px);
+grid-template-rows: repeat(2, 400px);
+justify-content: center;
+}
+.logo{
+  padding-left: 100px;
+}
+.sly{
+  width: 700px;
+}
+body{
+  overflow-x: hidden;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+    display: grid;
+    padding: 3rem;
+    grid-gap: 9rem;
+    grid-template-columns: repeat(1, 400px);
+    grid-template-rows: repeat(5, 550px);
+    justify-content: center;
+    }
+    /* medidas de img para vista celu */
+  .first{
+  width: 420px;
+  height: 400px;
+  }
+  .second{
+  width: 500px;
+  height: 450px;
+  }
+  .third{
+  width: 500px;
+  height: 350px;
+  }
+  .sly{
+    width: 400px;
+  }
+  .logo{
+    width: 500px;
+    height: 600px;
+  }
+  .img-responsive{
+    width: 430px;
+    height: 500px;
+  }
+  footer{
+  flex-direction: column;
+  }
+  h4{
+    text-align: center;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .contenedor {
+    margin: 50px auto;
+    width: 310px;
+    padding:50px;
+    background: #000000;
+    border-radius: 35px;
+    z-index: 1;
+}
+}
+@media screen and (min-width:601px) and (max-width: 767px) {
+  .container {
+  display: grid;
+  padding: 0rem;
+  grid-gap: 150px;
+  grid-template-columns: repeat(1, 350px);
+  grid-template-rows: repeat(3, 535px);
+  justify-content: center;
+  }
+  .hijo{
+    width: 350px;
+  }
+  .texto-centrado{
+    margin-right: 0px;
+  }
+  .logo{
+    padding-top: 100px;
+    width: 500px;
+    height: 450px;
+  }
+  .sly{
+    padding-left: 0px;
+    width: 500px;
+    height: 450px;
+  }
+  .first{
+    width: 500px;
+    height: 350px;
+  }
+  .second{
+    width: 505px;
+    height: 450px;
+  }
+  .third{
+    width: 505px;
+    height: 350px;
+  }
+  .img-responsive{
+    width: 500px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1350px) {
+  .container {
+    display: grid;
+    padding: 0rem;
+    grid-gap: 150px;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(3, 535px);
+    justify-content: center;
+    }
+    .hijo{
+      width: 350px;
+    }
+}
